@@ -11,41 +11,41 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   const testimonials = [
     {
-      name: "Алексей М.",
+      name: "Alessandro M.",
       rating: 5,
-      text: "Невероятная платформа! Уникальные игровые режимы и быстрые выплаты. Играю уже полгода - только положительные эмоции.",
+      text: "Piattaforma incredibile! Modalità di gioco uniche e pagamenti rapidi. Gioco da sei mesi - solo emozioni positive.",
       avatar: "🎮"
     },
     {
-      name: "Мария К.",
+      name: "Maria R.",
       rating: 5,
-      text: "Лучшее казино, в котором я играла. Отличная поддержка, честная игра и крутые бонусы для постоянных игроков.",
+      text: "Il miglior casinò in cui abbia mai giocato. Ottimo supporto, gioco onesto e fantastici bonus per i giocatori abituali.",
       avatar: "⭐"
     },
     {
-      name: "Дмитрий П.",
+      name: "Giuseppe B.",
       rating: 5,
-      text: "Morospin - это новый уровень! Современный интерфейс, море игр и моментальные выводы средств. Рекомендую всем!",
+      text: "Morospin è un nuovo livello! Interfaccia moderna, tantissimi giochi e prelievi istantanei. Lo consiglio a tutti!",
       avatar: "🎰"
     }
   ];
 
   const faqs = [
     {
-      question: "Как начать играть на Morospin?",
-      answer: "Просто нажмите на кнопку 'Играть сейчас', зарегистрируйтесь на сайте и получите приветственный бонус. Процесс регистрации занимает менее минуты!"
+      question: "Come iniziare a giocare su Morospin?",
+      answer: "Basta cliccare sul pulsante 'Gioca ora', registrarti sul sito e ricevere il bonus di benvenuto. Il processo di registrazione richiede meno di un minuto!"
     },
     {
-      question: "Какие игровые режимы доступны?",
-      answer: "Morospin предлагает уникальные игровые режимы: классические слоты, live-казино, турниры с призовым фондом, эксклюзивные провайдеры и специальные бонусные раунды."
+      question: "Quali modalità di gioco sono disponibili?",
+      answer: "Morospin offre modalità di gioco uniche: slot classiche, casinò live, tornei con montepremi, provider esclusivi e round bonus speciali."
     },
     {
-      question: "Безопасно ли играть на платформе?",
-      answer: "Абсолютно! Morospin использует современное SSL-шифрование, имеет лицензию и проходит регулярные проверки честности игр. Ваши данные и средства под надежной защитой."
+      question: "È sicuro giocare sulla piattaforma?",
+      answer: "Assolutamente! Morospin utilizza crittografia SSL moderna, ha una licenza e viene sottoposta a controlli regolari sull'equità dei giochi. I tuoi dati e fondi sono protetti in modo sicuro."
     },
     {
-      question: "Как быстро выводятся выигрыши?",
-      answer: "Выплаты обрабатываются мгновенно! В большинстве случаев средства поступают на ваш счет в течение нескольких минут после запроса на вывод."
+      question: "Quanto velocemente vengono elaborati i prelievi?",
+      answer: "I pagamenti vengono elaborati istantaneamente! Nella maggior parte dei casi, i fondi arrivano sul tuo conto entro pochi minuti dalla richiesta di prelievo."
     }
   ];
 
@@ -57,15 +57,23 @@ const Index = () => {
         <section className="min-h-screen flex items-center justify-center px-4 py-20">
           <div className="container mx-auto text-center">
             <div className="animate-fade-in">
+              <div className="mb-8 max-w-3xl mx-auto">
+                <img 
+                  src="https://cdn.poehali.dev/projects/ca4a34b5-21cd-4140-85c7-9f8ea59cd953/files/3b09de6b-1210-4996-9848-f39f6a91a3ba.jpg"
+                  alt="Morospin Gaming Platform"
+                  className="w-full h-64 object-cover rounded-2xl shadow-2xl shadow-primary/30"
+                />
+              </div>
+              
               <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-gradient-shift bg-[length:200%_200%]">
                 MOROSPIN
               </h1>
               <p className="text-2xl md:text-3xl mb-4 text-foreground/90">
-                Платформа нового поколения
+                Piattaforma di Nuova Generazione
               </p>
               <p className="text-lg md:text-xl mb-12 text-muted-foreground max-w-2xl mx-auto">
-                Уникальные игровые режимы, мгновенные выплаты и незабываемые эмоции. 
-                Присоединяйся к тысячам победителей!
+                Modalità di gioco uniche, pagamenti istantanei ed emozioni indimenticabili. 
+                Unisciti a migliaia di vincitori!
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
@@ -75,7 +83,7 @@ const Index = () => {
                   onClick={() => window.open('https://morospin.com', '_blank')}
                 >
                   <Icon name="Sparkles" size={24} className="mr-2" />
-                  Играть сейчас
+                  Gioca Ora
                 </Button>
                 <Button 
                   size="lg" 
@@ -83,7 +91,7 @@ const Index = () => {
                   className="text-lg px-8 py-6 border-2 border-primary/50 hover:bg-primary/10 transition-all duration-300"
                   onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  Узнать больше
+                  Scopri di Più
                   <Icon name="ArrowRight" size={24} className="ml-2" />
                 </Button>
               </div>
@@ -93,8 +101,8 @@ const Index = () => {
                   <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:scale-105">
                     <CardContent className="p-6 text-center">
                       <div className="text-5xl mb-4">🎯</div>
-                      <h3 className="text-xl font-semibold mb-2">Уникальные режимы</h3>
-                      <p className="text-muted-foreground">Эксклюзивные игры, которых нет больше нигде</p>
+                      <h3 className="text-xl font-semibold mb-2">Modalità Uniche</h3>
+                      <p className="text-muted-foreground">Giochi esclusivi che non troverai da nessun'altra parte</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -103,8 +111,8 @@ const Index = () => {
                   <Card className="bg-card/50 backdrop-blur-sm border-secondary/20 hover:border-secondary/50 transition-all duration-300 hover:scale-105">
                     <CardContent className="p-6 text-center">
                       <div className="text-5xl mb-4">⚡</div>
-                      <h3 className="text-xl font-semibold mb-2">Мгновенные выплаты</h3>
-                      <p className="text-muted-foreground">Получи выигрыш за несколько минут</p>
+                      <h3 className="text-xl font-semibold mb-2">Pagamenti Istantanei</h3>
+                      <p className="text-muted-foreground">Ricevi le vincite in pochi minuti</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -113,8 +121,8 @@ const Index = () => {
                   <Card className="bg-card/50 backdrop-blur-sm border-accent/20 hover:border-accent/50 transition-all duration-300 hover:scale-105">
                     <CardContent className="p-6 text-center">
                       <div className="text-5xl mb-4">🎁</div>
-                      <h3 className="text-xl font-semibold mb-2">Щедрые бонусы</h3>
-                      <p className="text-muted-foreground">Регулярные акции и промокоды</p>
+                      <h3 className="text-xl font-semibold mb-2">Bonus Generosi</h3>
+                      <p className="text-muted-foreground">Promozioni regolari e codici promozionali</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -125,9 +133,17 @@ const Index = () => {
 
         <section className="py-20 px-4 bg-card/30 backdrop-blur-sm">
           <div className="container mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
-              Отзывы игроков
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+              Recensioni dei Giocatori
             </h2>
+            
+            <div className="mb-12 max-w-4xl mx-auto">
+              <img 
+                src="https://cdn.poehali.dev/projects/ca4a34b5-21cd-4140-85c7-9f8ea59cd953/files/aafac5d9-6260-4e67-ba7f-74dd55c9c19e.jpg"
+                alt="Celebration"
+                className="w-full h-48 object-cover rounded-2xl shadow-2xl shadow-secondary/30"
+              />
+            </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {testimonials.map((testimonial, index) => (
@@ -158,9 +174,17 @@ const Index = () => {
 
         <section id="faq" className="py-20 px-4">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Частые вопросы
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Domande Frequenti
             </h2>
+            
+            <div className="mb-12">
+              <img 
+                src="https://cdn.poehali.dev/projects/ca4a34b5-21cd-4140-85c7-9f8ea59cd953/files/59bf713c-8933-4725-8f3b-6faaf27d691b.jpg"
+                alt="VIP Experience"
+                className="w-full h-48 object-cover rounded-2xl shadow-2xl shadow-primary/30"
+              />
+            </div>
             
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
@@ -189,12 +213,12 @@ const Index = () => {
                   MOROSPIN
                 </h3>
                 <p className="text-muted-foreground">
-                  Лицензированная платформа для азартных игр с уникальными игровыми режимами
+                  Piattaforma autorizzata per giochi d'azzardo con modalità di gioco uniche
                 </p>
               </div>
               
               <div>
-                <h4 className="text-lg font-semibold mb-4">Контакты</h4>
+                <h4 className="text-lg font-semibold mb-4">Contatti</h4>
                 <div className="space-y-2 text-muted-foreground">
                   <p className="flex items-center gap-2">
                     <Icon name="Mail" size={18} />
@@ -202,13 +226,13 @@ const Index = () => {
                   </p>
                   <p className="flex items-center gap-2">
                     <Icon name="Clock" size={18} />
-                    Поддержка 24/7
+                    Supporto 24/7
                   </p>
                 </div>
               </div>
               
               <div>
-                <h4 className="text-lg font-semibold mb-4">Социальные сети</h4>
+                <h4 className="text-lg font-semibold mb-4">Social Network</h4>
                 <div className="flex gap-4">
                   <Button 
                     size="icon" 
@@ -236,7 +260,7 @@ const Index = () => {
             </div>
             
             <div className="text-center pt-8 border-t border-primary/20 text-muted-foreground">
-              <p>© 2024 Morospin. Играйте ответственно. 18+</p>
+              <p>© 2024 Morospin. Gioca responsabilmente. 18+</p>
             </div>
           </div>
         </footer>
