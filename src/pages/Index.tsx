@@ -57,11 +57,11 @@ const Index = () => {
         <section className="min-h-screen flex items-center justify-center px-4 py-20">
           <div className="container mx-auto text-center">
             <div className="animate-fade-in">
-              <div className="mb-8 max-w-3xl mx-auto">
+              <div className="mb-8 max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-primary/30 bg-gradient-to-br from-primary/10 to-secondary/10">
                 <img 
                   src="https://cdn.poehali.dev/projects/ca4a34b5-21cd-4140-85c7-9f8ea59cd953/files/3b09de6b-1210-4996-9848-f39f6a91a3ba.jpg"
                   alt="Morospin Gaming Platform"
-                  className="w-full h-64 object-cover rounded-2xl shadow-2xl shadow-primary/30"
+                  className="w-full h-64 object-cover mix-blend-lighten"
                 />
               </div>
               
@@ -137,11 +137,11 @@ const Index = () => {
               Recensioni dei Giocatori
             </h2>
             
-            <div className="mb-12 max-w-4xl mx-auto">
+            <div className="mb-12 max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-secondary/30 bg-gradient-to-br from-secondary/10 to-accent/10">
               <img 
                 src="https://cdn.poehali.dev/projects/ca4a34b5-21cd-4140-85c7-9f8ea59cd953/files/aafac5d9-6260-4e67-ba7f-74dd55c9c19e.jpg"
                 alt="Celebration"
-                className="w-full h-48 object-cover rounded-2xl shadow-2xl shadow-secondary/30"
+                className="w-full h-48 object-cover mix-blend-lighten"
               />
             </div>
             
@@ -178,11 +178,11 @@ const Index = () => {
               Domande Frequenti
             </h2>
             
-            <div className="mb-12">
+            <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl shadow-primary/30 bg-gradient-to-br from-accent/10 to-primary/10">
               <img 
                 src="https://cdn.poehali.dev/projects/ca4a34b5-21cd-4140-85c7-9f8ea59cd953/files/59bf713c-8933-4725-8f3b-6faaf27d691b.jpg"
                 alt="VIP Experience"
-                className="w-full h-48 object-cover rounded-2xl shadow-2xl shadow-primary/30"
+                className="w-full h-48 object-cover mix-blend-lighten"
               />
             </div>
             
